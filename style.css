@@ -1,0 +1,75 @@
+@import url("https:googleapis.com/css2?family=poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    color: #0c0303;
+}
+
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 20px 10%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    color: white;
+    text-decoration:none;
+    font-weight: 530;
+
+}
+
+.navbar a {
+    font-size: 15px;
+    color:azure;
+    text-decoration: none;
+    font-weight: 250;
+    margin-left: 35px;
+    transition: 0s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: grey;
+}
+
+.home {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.my-button:hover{
+    background: gray;
+    box-shadow: none;
+}
+
+.my-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display : inline-block;
+    
+    text-align: center;
+}
+.my-button:hover{
+    background-color: gray;
+}
