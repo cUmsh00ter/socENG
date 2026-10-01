@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title><h1>socENG </h1></title>
+</head>
+<body>
+    <main class="main">
+        <header class="header">
+            <a href="#" class="logo">Cyberoxytocin</a>
+
+            <nav class="navbar">
+                <a href="#" class="active">home</a>
+                <a href="about.html">about</a>
+                <a href="contacts.html">contact</a>
+                <a href="donate.html">donate</a>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="home-content">
+                <h2>The agenda</h2>
+                <br>
+                 <p>This is a short assessment and educational training program. By the end
+                    of this program, you will be more cautious and protective with the information
+                    that may be used to compromise your system or the system of people(especially 
+                    the system of your workplace).
+
+                 </p>
+                <br>
+                <br>
+                    
+                    <h3>Social Engineering</h3>
+                    <br>
+                    <p>The use of psychological pressure to influence people to perform action or divulge 
+                        confidential information.
+                        <em><strong>social engineering attack</strong></em> are crutial in cybersecurity since the aim 
+                        is to psycholocal manipulate the person with access to the system.</p>
+                        <br>
+
+                    
+                        <h6>click the link to read more</h6>
+                <a href="https://en.wikipedia.org/social_engineering_(security)">wikipedia</a>
+                <br>
+                <a href="https://geeksforgeeks.org/cybersecurity/social-engineering-the-art-of-virtual-exploitation/">geeksforgeeks</a>
+                <br>
+                <a href="https://www.cisco.com/site/us/en/learn/topics/security/what-is-social-engineering.html">cisco</a>
+                
+            <br>
+            <br>
+            <a href="questions.html" class="my-button">Answer the questions</a>
+            
+            </div>
+        </section>
+
+        <br>
+    <br>
+</main>
+
+
+</body>
+</html>

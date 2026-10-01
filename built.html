@@ -1,63 +1,537 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title><h1>socENG </h1></title>
-</head>
-<body>
-    <main class="main">
-        <header class="header">
-            <a href="#" class="logo">Cyberoxytocin</a>
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>cyberoxytocin | social engineering</title> 
+        <style> 
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        } 
+        
+        body { 
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
+            line-height: 1.6; 
+            color: #1e293b; 
+            background: #f8fafc;
+         } 
+         
+         /* Header / Navigation */ 
+         header { 
+            background: #ffffff; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08); 
+            position: sticky; top: 0; z-index: 100;
+         } 
+         
+         .nav-container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 1rem 1.5rem; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+         } 
+         
+         .logo { 
+            font-size: 18px; 
+            font-weight: 530; 
+            color: black; 
+            text-decoration: none; 
+            display: flex; 
+            align-items: center; 
+            gap: 0.5rem;
+         } 
 
-            <nav class="navbar">
-                <a href="#" class="active">home</a>
-                <a href="about.html">about</a>
-                <a href="contacts.html">contact</a>
-                <a href="donate.html">donate</a>
-            </nav>
-        </header>
-        <section class="home">
-            <div class="home-content">
-                <h2>The agenda</h2>
-                <br>
-                <p>This is a short assessment and educational training program. By the end
-                    of this program, you will be more cautious and protective with the information
-                    that may be used to compromise your system or the system of people(especially 
-                    the system of your workplace).
-
-                </p>
-                <br>
-                <br>
+         
+         nav ul { 
+            list-style: none; 
+            display: flex; 
+            gap: 2rem;
+             } 
+             
+             nav a { 
+                text-decoration: none; 
+                color: #334155; 
+                font-weight: 500; 
+                transition: color 0.2s;
+             } 
+             
+             nav a:hover { 
+                color: #1e40af;
+             } 
+             
+             .btn { 
+                display: inline-block; 
+                padding: 0.75rem 1.5rem; 
+                border-radius: 8px; 
+                font-weight: 600; 
+                text-decoration: none; 
+                transition: all 0.2s; 
+                cursor: pointer; 
+                border: none;
+             } 
+             
+             .btn-primary { 
+                background: #1e40af;
+                 color: white;
+                 } 
+                 
+                 .btn-primary:hover { 
+                    background: #1e3a8a; 
+                    transform: translateY(-1px);
+                 } 
+                 
+                 .btn-secondary { 
+                    background: transparent; 
+                    color: black; 
+                    border: 2px solid #1e40af;
+                    } 
+                     
+                     .btn-secondary:hover { 
+                        background: #eff6ff;
+                    }
+                     
+                     /* Hero Section */ 
+                     .hero { 
+                        background: linear-gradient(black);
+                        color: white;
+                        padding: 5rem 1.5rem; 
+                        text-align: center;
+                    } 
+                     
+                     .hero-content { 
+                        max-width: 800px;
+                        margin: 0 auto;
+                    } 
                     
-                    <h3>Social Engineering</h3>
-                    <br>
-                    <p>The use of psychological pressure to influence people to perform action or divulge 
-                        confidential information.
-                        <em><strong>social engineering attack</strong></em> are crutial in cybersecurity since the aim 
-                        is to psycholocal manipulate the person with access to the system.</p>
-                        <br>
-
+                    .hero h1 { 
+                        font-size: 2.75rem; 
+                        font-weight: 800; 
+                        line-height: 1.2; 
+                        margin-bottom: 1.25rem;
+                     } 
+                     
+                    .hero p { 
+                        font-size: 1.25rem; 
+                        opacity: 0.95; 
+                        margin-bottom: 2rem; 
+                        max-width: 600px; 
+                        margin-left: auto; 
+                        margin-right: auto;
+                         } 
+                         
+                    .hero-buttons { 
+                        display: flex; 
+                        gap: 1rem; 
+                        justify-content: center; 
+                        flex-wrap: wrap;
+                        } 
+                        
+                    .hero .btn-primary { 
+                        background: white; 
+                        color: #1e40af;
+                        } 
+                        
+                    .hero .btn-primary:hover { 
+                        background: #f1f5f9;
+                         } 
+                    .hero .btn-secondary { 
+                        border-color: white;
+                        color: white;
+                        } 
+                        
+                    .hero .btn-secondary:hover { 
+                        background: rgba(255,255,255,0.15);
+                         }
+                         
+                    /* Features Section */ 
                     
-                        <h6>click the link to read more</h6>
-                <a href="https://en.wikipedia.org/social_engineering_(security)">wikipedia</a>
-                <br>
-                <a href="https://geeksforgeeks.org/cybersecurity/social-engineering-the-art-of-virtual-exploitation/">geeksforgeeks</a>
-                <br>
-                <a href="https://www.cisco.com/site/us/en/learn/topics/security/what-is-social-engineering.html">cisco</a>
-                
-            <br>
-            <br>
-            <a href="questions.html" class="my-button">Answer the questions</a>
-            
-            </div>
-        </section>
+                    .section { 
+                        max-width: 1200px; 
+                        margin: 0 auto; 
+                        padding: 4.5rem 1.5rem;
+                     } 
+                     
+                     .section-header { 
+                        text-align: center; 
+                        margin-bottom: 3rem; 
+                    } 
+                    
+                    .section-header h2 { 
+                        font-size: 2rem; 
+                        color: #1e293b; 
+                        margin-bottom: 0.75rem; 
+                    } 
+                    
+                    .section-header p { 
+                        color: #64748b; 
+                        font-size: 1.1rem; 
+                        max-width: 560px; 
+                        margin: 0 auto; 
+                    } 
+                    
+                    .features-grid { 
+                        display: grid; 
+                        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+                        gap: 2rem; 
+                    } 
+                    
+                    .feature-card { 
+                        background: white; 
+                        padding: 2rem; 
+                        border-radius: 12px; 
+                        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05); 
+                        transition: transform 0.2s, box-shadow 0.2s; 
+                    } 
+                    
+                    .feature-card:hover { 
+                        transform: translateY(-4px); 
+                        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.08); 
+                    } 
+                    
+                    .feature-icon { 
+                        width: 48px; 
+                        height: 48px; 
+                        background: #eff6ff; 
+                        color: #1e40af; 
+                        border-radius: 10px; 
+                        display: flex; 
+                        align-items: center; 
+                        justify-content: center; 
+                        font-size: 1.5rem; 
+                        margin-bottom: 1.25rem; 
+                    } 
+                    
+                    .feature-card h3 { 
+                        font-size: 1.25rem; 
+                        margin-bottom: 0.75rem; 
+                        color: #1e293b; 
+                    } 
+                    
+                    .feature-card p { 
+                        color: #64748b; 
+                        font-size: 0.95rem; 
+                    }
+                    
+                    
+                    /* Courses Preview */ 
+                    .courses { 
+                        background: #f1f5f9; 
+                    } 
+                    
+                    .courses-grid { 
+                        display: grid; 
+                        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+                        gap: 1.75rem; 
+                    } 
+                    
+                    .course-card { 
+                        background: white; 
+                        border-radius: 12px; 
+                        overflow: hidden; 
+                        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); 
+                        transition: transform 0.2s; 
+                    } 
+                    
+                    .course-card:hover { 
+                        transform: translateY(-3px); 
+                    } 
+                    
+                    .course-image { 
+                        height: 160px; 
+                        background: linear-gradient(120deg, #1e40af, #38bdf8); 
+                        display: flex; 
+                        align-items: center; 
+                        justify-content: center; 
+                        color: white; 
+                        font-size: 2.5rem; 
+                    } 
+                    .course-content { 
+                        padding: 1.5rem; 
+                    } 
+                    .course-content h3 { 
+                        font-size: 1.2rem; 
+                        margin-bottom: 0.5rem; 
+                    } 
+                    
+                    .course-meta { 
+                        display: flex; 
+                        gap: 1rem; 
+                        font-size: 0.875rem; 
+                        color: #64748b; 
+                        margin-bottom: 1rem; 
+                    } 
+                    .course-content p { 
+                        color: #475569; 
+                        font-size: 0.95rem; 
+                        margin-bottom: 1.25rem; 
+                    } 
+                    /* Stats */ 
+                    .stats { 
+                        background: #01030a; 
+                        color: white; 
+                        padding: 3.5rem 1.5rem; 
+                    } 
+                    
+                    .stats-grid { 
+                        max-width: 1000px; 
+                        margin: 0 auto; 
+                        display: grid; 
+                        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+                        gap: 2rem; 
+                        text-align: center; 
+                    } 
+                    .stat-number { 
+                        font-size: 2.5rem; 
+                        font-weight: 800; 
+                        margin-bottom: 0.25rem; 
+                    } 
+                    .stat-label { 
+                        opacity: 0.9; 
+                        font-size: 1rem; 
+                    } 
+                    /* CTA Section */ 
+                    .cta { 
+                        text-align: center; 
+                        padding: 4.5rem 1.5rem; 
+                        background: white; 
+                    } 
+                    .cta h2 { 
+                        font-size: 2rem; 
+                        margin-bottom: 1rem; 
+                    } 
+                    .cta p { 
+                        color: #64748b; 
+                        max-width: 500px; 
+                        margin: 0 auto 2rem; 
+                        font-size: 1.1rem; 
+                    } 
+                    /* Footer */ 
+                    footer { 
+                        background: #0f172a; 
+                        color: #94a3b8; 
+                        padding: 3rem 1.5rem 1.5rem; 
+                    } 
+                    .footer-content { 
+                        max-width: 1200px; 
+                        margin: 0 auto; 
+                        display: grid; 
+                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+                        gap: 2.5rem; 
+                        margin-bottom: 2.5rem; 
+                    } 
+                    .footer-brand h3 { 
+                        color: white; 
+                        font-size: 1.35rem; 
+                        margin-bottom: 0.75rem; 
+                    } 
+                    
+                    .footer-brand p { 
+                        font-size: 0.95rem; 
+                        line-height: 1.6; 
+                    } 
+                    
+                    .footer-links h4 { 
+                        color: white; 
+                        margin-bottom: 1rem; 
+                        font-size: 1rem; 
+                    } 
+                    
+                    .footer-links ul { 
+                        list-style: none; 
+                    } 
+                    .footer-links a { 
+                        color: #94a3b8; 
+                        text-decoration: none; 
+                        display: block; 
+                        margin-bottom: 0.5rem; 
+                        font-size: 0.95rem; 
+                        transition: color 0.2s; 
+                    } 
+                    
+                    .footer-links a:hover { 
+                        color: #38bdf8; 
+                    } 
+                    .footer-bottom { 
+                        max-width: 1200px; 
+                        margin: 0 auto; 
+                        padding-top: 1.5rem; 
+                        border-top: 1px solid #1e293b; 
+                        text-align: center; 
+                        font-size: 0.875rem; 
+                    } 
+                    /* Responsive */ 
+                    @media (max-width: 768px) 
+                    { 
+                        nav ul { 
+                            display: none; 
+                        } 
+                        .hero h1 { 
+                            font-size: 2.1rem; 
+                        } 
+                        .hero p { 
+                            font-size: 1.1rem; 
+                        } 
+                    } 
+                    </style> 
+                    </head> 
+                    <body> 
+                        <!-- Navigation --> 
+                         <header> 
+                            <div class="nav-container"> 
+                                <a href="#" class="logo">Cyberoxytocin</a> 
+                                <nav> 
+                                    <ul>  
+                                    <li><a href="donate.html">donate</a></li> 
+                                    <li><a href="about.html">about</a></li> 
+                                    <li><a href="contacts.html">contact</a></li> 
+                                </ul> 
+                            </nav> 
+                            <a href="questions.html" class="btn btn-primary">Start Learning</a> 
+                        </div> 
+                    </header> 
+                    <!-- Hero --> 
+                     <section class="hero"> 
+                        <div class="hero-content"> 
+                            <h1>Knowledge that Empowers.<br>Skills that Last.</h1> 
+                            <p>Join thousands of people training for cybersecurity awareness through a structured social engineering program.</p> 
+                            <div class="hero-buttons"> 
+                                <a href="#courses" class="btn btn-primary">Explore Attacks</a> 
+                                <a href="#features" class="btn btn-secondary">Types of Social Engineering</a> 
+                            </div> 
+                        </div> 
+                    </section> 
+                    <!-- Features --> 
+                     <section class="section" id="features"> 
+                        <div class="section-header"> 
+                            <h2>What is Social Engineering?</h2> 
+                            <p>A complete learning experience designed for clarity, progress, and lasting results.</p> 
+                        </div> 
+                        <div class="features-grid"> 
+                            <div class="feature-card"> 
+                                
+                                <h3>Phishing</h3> 
+                                <p>The most common form. Attackers send fraudulent messages that appear to come from trusted sources (banks, companies, government agencies) to trick victims into clicking malicious links, opening infected attachments, or entering credentials on fake sites.</p> 
+                            </div> 
+                            <div class="feature-card"> 
+                                
+                                <h3>Pretexting</h3> 
+                                <p>The attacker invents a plausible scenario(pretext) and impersonates a trusted figure (e.g., IT Support, bank employee, colleague, or authority) to extract information or gain access. It often involves prior research to make the story convincing.</p> 
+                            </div> 
+                            <div class="feature-card"> 
+                                
+                                <h3>Baiting</h3> 
+                                <p>Attackers lure victims with something desirable (free software, music, movies, or a found USB drive labeled something intriguing). The "bait" delivers malware or leads to credential theft when the victim takes the offer.</p> 
+                            </div> 
+                            <div class="feature-card"> 
+                                 
+                                <h3>Tailgating/ Piggybacking</h3> 
+                                <p>A physical attack in which the attacker follows an authorized person into a restricted area (office building, data center, etc.) without proper authentication, often by acting as if they belong or asking someone to hold the door.</p> 
+                            </div> 
+                                <div class="feature-card"> 
+                                     
+                                    <h3>Scareware</h3> 
+                                    <p>Fake alerts or pop-ups that frighten the user into believing their device is infected or at risk, prompting them to download malicious "antivirus" software or pay for a fraudulent fix.</p> 
+                                </div> <div class="feature-card"> 
+                                     
+                                    <h3>Business Email Compromise/ Invoice Fraud</h3> 
+                                    <p>Attackers impersonate executives, vendors, or business partners (often after compromising or spoofing an email account) to trick employees into transfering money or sharing sensitive data. Related techniques include brand impersonation.</p> 
+                                </div> 
+                            </div> 
+                        </section> 
 
-        <br>
-    <br>
-</main>
 
-    <link rel="stylesheet" href="extras.css">
-</body>
+                        
+                         <section class="section courses" id="courses"> 
+                            <div class="section-header"> 
+                                <h2>Popular Local Phishing Attacks</h2> 
+                                <p>Read through articles about common phishing attacks to build lasting awareness.</p> 
+                            </div> <div class="courses-grid"> 
+                                <div class="course-card"> 
+                                 
+                                    <div class="course-content"> 
+                                        <h3>Water Disconnection Scams</h3> 
+                                        <iframe src="https:www.capetown.gov.za/Media-and-news/Be%20ware,%20report%20water%20disconnection%20scams" frameborder="0"></iframe>
+                                        <div class="course-meta"> 
+                                            <span>City of Cape Town warning: Be aware and report water disconnection scams</span> 
+                                             
+                                        </div> 
+                                        <p>The City of Cape Town is alerting residents to an ongoing scam in which fraudsters pose as City Waterand Sanitation saff and demand payment to prevent supposed water restrictions or disconnections.</p> 
+                                        <a href="https:www.capetown.gov.za/Media-and-news/Be%20ware,%20report%20water%20disconnection%20scams" class="btn btn-secondary">Read More</a> 
+                                    </div> 
+                                </div> 
+                                <div class="course-card"> 
+                                    <div class="course-content"> 
+                                        <h3>Cyber Attact: TV Licence</h3>
+                                        <iframe src="https://mybroadband.co.za/news/boardcasting/666632-new-tv-licene-scam-in-south-africa.html" frameborder="0"></iframe> 
+                                        <div class="course-meta"> 
+                                            <span>New TV Licence phishing scam warnings from the SABC</span> 
+                                             
+                                        </div> 
+                                        <p>The South African Broadcasting Corporation (SABC) has alerted the public to a new email phishing scam targeting TV licence account holders.</p> 
+                                        <a href="https://mybroadband.co.za/news/boardcasting/666632-new-tv-licene-scam-in-south-africa.html" class="btn btn-secondary">Read More</a> 
+                                    </div> 
+                                </div>
+
+                                <div class="course-card"> 
+                                     
+                                    <div class="course-content"> 
+                                        <h3>Email phishing scam</h3>
+                                        <iframe src="https://iol.co.za/technology/2008-06-25-fnb-warns-of-email-phishing-scam/" frameborder="0"></iframe> 
+                                        <div class="course-meta"> 
+                                            <span>FNB email phishing attack</span> 
+                                             
+                                        </div> 
+                                        <p>First National Bank warns the public about the email phishing scams.</p> 
+                                        <a href="https://iol.co.za/technology/2008-06-25-fnb-warns-of-email-phishing-scam/" class="btn btn-secondary">Read More</a> 
+                                    </div> 
+                                </div> 
+                            </div>
+
+                        </section> 
+                         
+                         <section class="stats"> 
+                            <div class="stats-grid"></div> 
+                        </section>
+
+                        <!-- CTA --> 
+                         <section class="cta" id="about"> 
+                            <h2>Ready to Begin Your Learning Journey?</h2> 
+                            <p></p> 
+                            <a href="questions.html" class="btn btn-primary">Get Started Free</a> 
+                        </section> 
+                        
+                        
+                            <footer id="contact"> 
+                        <div class="footer-content"> 
+                            <div class="footer-brand"> 
+                                <h3>Cyber Oxytocin</h3> 
+                                <p>Empowering people with clear, structured, and practical education.</p> 
+                            </div> 
+                            <div class="footer-links"> 
+                               
+            </div> 
+            <div class="footer-links"> 
+                <h4>Company</h4> 
+                <ul> 
+                    <li><a href="about.html">About Us</a></li> 
+                    <li><a href="#">Careers</a></li> 
+                </ul> 
+            </div> 
+                    
+                    <div class="footer-links"> 
+                        <h4>Support</h4> <ul> 
+                    <li><a href="#">Help Center</a></li> 
+                    <li><a href="contacts.html">Contact</a></li>  
+                    </ul> 
+                </div> 
+            </div> 
+            <div class="footer-bottom"> 
+                        <p></p>
+                        </div> 
+                    </footer> 
+</body> 
+
 </html>

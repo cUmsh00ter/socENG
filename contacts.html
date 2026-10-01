@@ -1,1 +1,297 @@
-jlkvm,.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #1a1a2e;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #1a1a2e, #162f3e);
+            color: white;
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .contact-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            opacity: 0.85;
+            margin-bottom: 30px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .info-item .icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .info-item h3 {
+            font-size: 0.95;
+            margin-bottom: 4px;
+            opacity: 0.7;
+        }
+
+        .info-item p{
+            margin: 0;
+            font-size: 1.05rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: rgba( 255, 255, 255, 0.3);
+
+        }
+
+        .contact-form {
+            padding: 50px 40px;
+        }
+
+        .contact-form h2 {
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            color: #1a1a2e;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            color: #444;
+        }
+
+        .form-group input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1.5px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s, box-shadow 0.3s; 
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #4a6cf7;
+            box-shadow: 0 0 0 3px rgba( 74, 108, 247, 0.15);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        .btn {
+            background: #4a6cf7;
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background: #3a5ce5;
+            transform: translateY(-1px);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .success-message {
+            display: none;
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .contact-wrapper{
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                padding: 40px 30px;
+            }
+
+            .contact-form {
+                padding: 40px 30px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you. Send us a message and we'll repond as soon as possible</p>
+        </header>            
+        
+        <div class="contact-wrapper">
+            <div class="contact-info"> 
+                <h2>Contact Information</h2> 
+                <p>Fill out the form and our team will get back to you within 24 hours.</p> 
+                
+                <div class="info-item"> 
+                    <div class="icon">✉️</div> 
+                    <div> 
+                        <h3>Email</h3> 
+                        <p>sahvfgmail.com</p> 
+                    </div> 
+                </div> 
+                <div class="social-links"> 
+                    <a href="https://x.com/cyberoxytocin" title="Twitter">𝕏</a> 
+                    <a href="https://instagram.com/cyberoxytocin" title="Instagram">📷</a> 
+                </div> 
+            </div> 
+            
+            <!-- Contact Form --> 
+            <div class="contact-form"> 
+                <h2>Send a Message</h2> 
+                
+            <div class="success-message" id="successMessage"> 
+                Thank you! Your message has been sent successfully. 
+                </div> 
+                
+            <form id="contactForm"> 
+                <div class="form-group"> 
+                    <label for="name">Full Name</label> 
+                    <input type="text" id="name" name="name" placeholder="John Doe" required> 
+                </div> 
+                    
+                <div class="form-group"> 
+                    <label for="email">Email Address</label> 
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required> 
+                </div> 
+                
+                <div class="form-group"> 
+                    <label for="subject">Subject</label> 
+                    <input type="text" id="subject" name="subject" placeholder="How can we help?" required> 
+                </div> 
+                
+                <div class="form-group"> 
+                    <label for="message">Message</label> 
+                    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea> 
+                </div> 
+                
+                <button type="submit" class="btn">Send Message</button> 
+            </form> 
+        </div> 
+    </div> 
+</div> 
+        
+        
+        
+<script> 
+ const form = document.getElementById('contactForm');
+ const successMessage = document.getElementById('successMessage');
+
+ form.addEventListener('submit', function(e) { e.preventDefault();
+     // Here you would normally send the data to a server 
+    successMessage.style.display = 'block'; form.reset(); 
+    // Hide the success message after 5 seconds 
+    setTimeout(() => { 
+        successMessage.style.display = 'none';
+         }, 5000);
+     }); 
+    </script> 
+</body>
+</html>
